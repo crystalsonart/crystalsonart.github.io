@@ -1,0 +1,14 @@
+{
+	"name": "crystal-yoori-son",
+	"version": "1.0.0",
+	"description": "Crystal Yoori Son's Portfolio Website",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "sass sass/style.scss:css/style.css -w"
+	},
+	"author": "Michael Hashimoto",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.65.1"
+	}
+}

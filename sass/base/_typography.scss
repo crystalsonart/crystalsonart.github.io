@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("../../fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+	font-family: Raleway, Lato, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 1.7;
+	color: $color-grey-dark;
+}

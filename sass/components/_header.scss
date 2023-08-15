@@ -1,0 +1,32 @@
+.header {
+	width: 50rem;
+	padding: 4rem 4rem;
+	background-color: $color-grey-light;
+
+	&--section {
+		position: fixed;
+	}
+}
+
+.crystal {
+	&__name {
+		display: flex;
+
+		&--icon {
+			width: 5rem;
+			height: 5rem;
+		}
+
+		&--name {
+			margin: .5rem 1rem;
+			font-size: 2.2rem;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: $color-black;
+		}
+	}
+
+	&__description {
+		margin: 2rem 1rem;
+	}
+}
