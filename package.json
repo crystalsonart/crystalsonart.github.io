@@ -4,11 +4,22 @@
 	"description": "Crystal Yoori Son's Portfolio Website",
 	"main": "index.js",
 	"scripts": {
-		"compile:sass": "sass sass/style.scss:css/style.css -w"
+		"build": "vite build",
+		"compile:sass": "sass sass/style.scss:css/style.css -w",
+		"dev": "vite",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	},
 	"author": "Michael Hashimoto",
 	"license": "ISC",
 	"devDependencies": {
-		"sass": "^1.65.1"
+		"@types/react": "^18.2.15",
+		"@types/react-dom": "^18.2.7",
+		"@vitejs/plugin-react": "^4.0.3",
+		"sass": "^1.64.2",
+		"vite": "^4.4.5"
 	}
 }
