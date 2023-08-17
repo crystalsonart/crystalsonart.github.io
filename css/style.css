@@ -13,7 +13,7 @@ html {
 body {
   box-sizing: border-box;
   display: flex;
-  background-color: #eee;
+  background-color: #f9f9f9;
 }
 
 @font-face {
@@ -25,13 +25,16 @@ body {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.7;
-  color: #777;
+  color: #777777;
 }
 
 .header {
   width: 50rem;
   padding: 4rem 4rem;
-  background-color: #eee;
+}
+.header--link {
+  text-decoration: none;
+  cursor: pointer;
 }
 .header--section {
   position: fixed;
@@ -77,18 +80,20 @@ body {
   font-weight: 700;
   margin: 0.5rem 0;
 }
-.navigation--link a {
-  text-decoration: none;
+.navigation--item {
   font-size: 1.25rem;
+}
+.navigation--link {
+  text-decoration: none;
   cursor: pointer;
 }
-.navigation--link a, .navigation--link a:link, .navigation--link a:visited {
-  color: #777;
+.navigation--link, .navigation--link:link, .navigation--link:visited {
+  color: #777777;
 }
-.navigation--link a:hover {
+.navigation--link:hover {
   color: #7ed56f;
 }
-.navigation--link a:active {
+.navigation--link:active {
   color: #28b485;
 }
 

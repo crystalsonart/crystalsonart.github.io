@@ -6,9 +6,12 @@
 		margin: .5rem 0;
 	}
 
-	&--link a {
-		text-decoration: none;
+	&--item {
 		font-size: 1.25rem;
+	}
+
+	&--link {
+		text-decoration: none;
 		cursor: pointer;
 
 		&,
