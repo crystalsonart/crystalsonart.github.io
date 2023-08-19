@@ -27,12 +27,15 @@ jobs:
             git config user.name "Mike Hashimoto (bot)"
             git config user.email "mikehashimoto.com@gmail.com"
 
-            echo "Built at [${git_commit}](https://github.com/mikehashimoto/crystalyoorison/commit/${git_commit}) from [${git_branch}](https://github.com/mikehashimoto/crystalyoorison/tree/${git_branch})" > README.md
+            echo -e "# Crystal Yoori Son's Portfolio\n" > README.md
+            echo -e "Published: https://mikehashimoto.com/crystalson.art\n" >> README.md
+            echo -e "Git Branch: [${git_branch}](https://github.com/mikehashimoto/crystalson.art/tree/${git_branch})\n" >> README.md
+            echo -e "Git Commit: [${git_commit}](https://github.com/mikehashimoto/crystalson.art/commit/${git_commit})\n" >> README.md
 
             git add --force README.md
 
             git commit -m "Publish README.md"
 
-            git push -f https://mikehashimoto:${ACCESS_TOKEN}@github.com/mikehashimoto/crystalyoorison refs/heads/production:refs/heads/production
+            git push -f https://mikehashimoto:${ACCESS_TOKEN}@github.com/mikehashimoto/crystalson.art refs/heads/production:refs/heads/production
           fi
         shell: bash

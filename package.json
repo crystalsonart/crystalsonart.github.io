@@ -1,7 +1,7 @@
 {
-	"name": "crystal-yoori-son",
+	"name": "crystal-son-art",
 	"version": "1.0.0",
-	"description": "Crystal Yoori Son's Portfolio Website",
+	"description": "Crystal Yoori Son's Portfolio",
 	"main": "index.js",
 	"scripts": {
 		"build": "npx rimraf dist && vite build",
