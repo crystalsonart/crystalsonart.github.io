@@ -1,0 +1,38 @@
+name: Deploy to Production
+on:
+  push:
+    branches: [ main-react ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+      - env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          # https://github.com/rayluo/github-pages-overwriter/blob/dev/action.yml
+          # https://gist.github.com/cobyism/4730490#gistcomment-1374989
+          # https://github.com/ad-m/github-push-action/issues/96
+
+          if [[ -e dist ]]; then
+            git_branch=$(git rev-parse --abbrev-ref HEAD)
+            git_commit=$(git log -n 1 --format='%H' | cut -c 1-7)
+
+            git subtree split --prefix=dist --branch refs/heads/production
+
+            git checkout refs/heads/production
+
+            git config user.name "Mike Hashimoto (bot)"
+            git config user.email "mikehashimoto.com@gmail.com"
+
+            echo "Built at [${git_commit}](https://github.com/mikehashimoto/crystalyoorison/commit/${git_commit}) from [${git_branch}](https://github.com/mikehashimoto/crystalyoorison/tree/${git_branch})" > README.md
+
+            git add --force README.md
+
+            git commit -m "Publish README.md"
+
+            git push -f https://mikehashimoto:${ACCESS_TOKEN}@github.com/mikehashimoto/crystalyoorison refs/heads/production:refs/heads/production
+          fi
+        shell: bash
