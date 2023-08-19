@@ -4,7 +4,8 @@
 	"description": "Crystal Yoori Son's Portfolio Website",
 	"main": "index.js",
 	"scripts": {
-		"build": "vite build",
+		"build": "npx rimraf dist && vite build",
+		"build:watch": "npx rimraf dist && vite build -w",
 		"compile:sass": "sass sass/style.scss:css/style.css -w",
 		"dev": "vite",
 		"preview": "vite preview"
