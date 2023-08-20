@@ -13,7 +13,7 @@ function Main({ images, onSelectItem }) {
 	return (
 		<main className="main">
 			<section className="images">
-				{images &&
+				{images ? (
 					images.map((image, index) => {
 						return (
 							<img
@@ -26,7 +26,10 @@ function Main({ images, onSelectItem }) {
 								src={image.src}
 							/>
 						);
-					})}
+					})
+				) : (
+					<div>There are no images</div>
+				)}
 			</section>
 		</main>
 	);
