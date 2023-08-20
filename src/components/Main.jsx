@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const images = [
 	{ name: "Niko 01", src: "./images/niko/niko-01.jpg" },
 	{ name: "Niko 02", src: "./images/niko/niko-02.jpg" },
@@ -21,12 +23,14 @@ const images = [
 	{ name: "Little Big Awesome 07", src: "./images/little-big-awesome/little-big-awesome-07.png" },
 ];
 
-// Event Handler
-const handleClick = (event) => {
-	console.log(event);
-};
-
 function Main() {
+	const [selectedIndex, setSelectedIndex] = useState(-1);
+
+	// Event Handler
+	const handleClick = (event, index) => {
+		setSelectedIndex(index);
+	};
+
 	return (
 		<main className="main">
 			<section className="images">
@@ -35,11 +39,11 @@ function Main() {
 						return (
 							<img
 								alt={image.name}
+								className={selectedIndex === index ? "selected-image" : "image"}
 								key={image.name}
 								onClick={(event) => {
-									handleClick(event);
+									handleClick(event, index);
 								}}
-								onMouseDown={handleClick}
 								src={image.src}
 							/>
 						);
