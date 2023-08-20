@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Main(data) {
+function Main({ images }) {
 	const [selectedIndex, setSelectedIndex] = useState(-1);
 
 	// Event Handler
@@ -13,8 +13,8 @@ function Main(data) {
 	return (
 		<main className="main">
 			<section className="images">
-				{data.images &&
-					data.images.map((image, index) => {
+				{images &&
+					images.map((image, index) => {
 						return (
 							<img
 								alt={image.name}
