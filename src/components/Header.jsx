@@ -14,16 +14,44 @@ function Header() {
 				</div>
 				<nav className="navigation">
 					<div className="navigation--header">Background Paint</div>
-					<div className="navigation--item"><a className="navigation--link" href="#">Pantheon</a></div>
-					<div className="navigation--item"><a className="navigation--link" href="#">Mao Mao</a></div>
-					<div className="navigation--item"><a className="navigation--link" href="#">Niko</a></div>
-					<div className="navigation--item"><a className="navigation--link" href="#">Midnight Gospel</a></div>
-					<div className="navigation--item"><a className="navigation--link" href="#">Little Big Awesome</a></div>
+					<div className="navigation--item">
+						<a className="navigation--link" href="#">
+							Pantheon
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className="navigation--link" href="#">
+							Mao Mao
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className="navigation--link" href="#">
+							Niko
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className="navigation--link" href="#">
+							Midnight Gospel
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className="navigation--link" href="#">
+							Little Big Awesome
+						</a>
+					</div>
 				</nav>
 				<nav class="navigation">
 					<div className="navigation--header">About Me</div>
-					<div className="navigation--item"><a className="navigation--link" href="#">Contact Me</a></div>
-					<div className="navigation--item"><a className="navigation--link" href="#">Past Work</a></div>
+					<div className="navigation--item">
+						<a className="navigation--link" href="#">
+							Contact Me
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className="navigation--link" href="#">
+							Past Work
+						</a>
+					</div>
 				</nav>
 			</section>
 		</header>

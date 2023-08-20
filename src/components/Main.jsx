@@ -1,3 +1,5 @@
+import ListItems from "./ListItems";
+
 function Main() {
 	return (
 		<main className="main">
