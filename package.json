@@ -4,8 +4,8 @@
 	"description": "Crystal Yoori Son's Portfolio",
 	"main": "index.js",
 	"scripts": {
-		"build": "npx rimraf dist && vite build",
-		"build:watch": "npx rimraf dist && vite build -w",
+		"build": "npx rimraf dist/assets && npx rimraf dist/images && vite build",
+		"build:watch": "npx rimraf dist/assets && npx rimraf dist/images && vite build -w",
 		"compile:sass": "sass sass/style.scss:css/style.css -w",
 		"dev": "vite",
 		"preview": "vite preview"
@@ -21,6 +21,7 @@
 		"@types/react-dom": "^18.2.7",
 		"@vitejs/plugin-react": "^4.0.3",
 		"sass": "^1.64.2",
-		"vite": "^4.4.5"
+		"vite": "^4.4.5",
+		"vite-plugin-static-copy": "^0.17.0"
 	}
 }

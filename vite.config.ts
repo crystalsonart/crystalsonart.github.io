@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
@@ -6,7 +7,15 @@ export default defineConfig({
 		outDir: '../dist'
 	},
 	plugins: [
-		react()
+		react(),
+		viteStaticCopy({
+		  targets: [
+			{
+			  src: 'images',
+			  dest: 'images'
+			}
+		  ]
+		})
 	],
 	root: 'src',
 	server: {
