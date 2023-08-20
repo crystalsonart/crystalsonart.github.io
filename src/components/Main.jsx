@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-function Main({ images }) {
+function Main({ images, onSelectItem }) {
 	const [selectedIndex, setSelectedIndex] = useState(-1);
 
 	// Event Handler
-	const handleClick = (event, index) => {
+	const handleClick = (event, image, index) => {
 		console.log(event);
-
+		onSelectItem(image);
 		setSelectedIndex(index);
 	};
 
@@ -21,7 +21,7 @@ function Main({ images }) {
 								className={selectedIndex === index ? "selected-image" : "image"}
 								key={image.name}
 								onClick={(event) => {
-									handleClick(event, index);
+									handleClick(event, image, index);
 								}}
 								src={image.src}
 							/>
