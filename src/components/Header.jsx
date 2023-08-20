@@ -4,7 +4,7 @@ const Header = () => {
 			<section className="header--section">
 				<a className="header--link" href="/">
 					<h1 className="crystal__name">
-						<img className="crystal__name--icon" src="images/crystal_icon.png" />
+						<img className="crystal__name--icon" src="./images/crystal_icon.png" />
 						<div className="crystal__name--name">Crystal Yoori Son</div>
 					</h1>
 				</a>
