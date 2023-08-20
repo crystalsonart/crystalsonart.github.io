@@ -1,6 +1,6 @@
 function Header() {
 	return (
-		<header class="header">
+		<header className="header">
 			<section className="header--section">
 				<a className="header--link" href="/">
 					<h1 className="crystal__name">
@@ -40,7 +40,7 @@ function Header() {
 						</a>
 					</div>
 				</nav>
-				<nav class="navigation">
+				<nav className="navigation">
 					<div className="navigation--header">About Me</div>
 					<div className="navigation--item">
 						<a className="navigation--link" href="#">
