@@ -1,4 +1,4 @@
-const Header = () => {
+function Header() {
 	return (
 		<header class="header">
 			<section className="header--section">

@@ -1,4 +1,4 @@
-const Main = () => {
+function Main() {
 	return (
 		<main className="main">
 			<section className="images">

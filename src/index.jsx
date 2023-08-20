@@ -4,7 +4,7 @@ import Main from './components/Main';
 
 import './sass/style.scss';
 
-const App = () => {
+function App() {
 	return (
 		<>
 			<Header />
