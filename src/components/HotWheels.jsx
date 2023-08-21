@@ -1,6 +1,6 @@
 import Main from "./Main";
 
-function MicroMachines() {
+function HotWheels() {
 	return (
 		<Main
 			onSelectItem={(value) => {
@@ -10,4 +10,4 @@ function MicroMachines() {
 	);
 }
 
-export default MicroMachines;
+export default HotWheels;

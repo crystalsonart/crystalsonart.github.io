@@ -5,6 +5,13 @@ function Main({ images, onSelectItem }) {
 
 	// Event Handler
 	const handleClick = (event, image, index) => {
+		if (selectedIndex === index) {
+			setSelectedIndex(-1);
+			onSelectItem(null);
+
+			return;
+		}
+
 		console.log(event);
 		onSelectItem(image);
 		setSelectedIndex(index);

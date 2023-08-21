@@ -9,7 +9,7 @@ import Midnight from "./Midnight";
 import Niko from "./Niko";
 import LittleBig from "./LittleBig";
 import Turbo from "./Turbo";
-import MicroMachines from "./MicroMachines";
+import HotWheels from "./HotWheels";
 
 import PersonalWork from "./PersonalWork";
 import AboutMe from "./AboutMe";
@@ -39,7 +39,7 @@ function Navigation() {
 					<Route path="/niko" element={<Niko />} />
 					<Route path="/little-big" element={<LittleBig />} />
 					<Route path="/turbo" element={<Turbo />} />
-					<Route path="/micro-machines" element={<MicroMachines />} />
+					<Route path="/hot-wheels" element={<HotWheels />} />
 					<Route path="/personal-work" element={<PersonalWork />} />
 					<Route path="/about-me" element={<AboutMe />} />
 					<Route path="/contact-me" element={<ContactMe />} />

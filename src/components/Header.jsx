@@ -25,7 +25,7 @@ function Header() {
 					<div>crystalson826@gmail.com</div>
 				</div>
 				<nav className="navigation">
-					<div className="navigation--header">Art Director</div>
+					<div className="navigation--header">Art Director / Paint Supervisor</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/pantheon")} href="/#/pantheon">
 							Pantheon
@@ -36,17 +36,20 @@ function Header() {
 					<div className="navigation--header">Paint Supervisor</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/mao-mao")} href="/#/mao-mao">
-							Mao Mao
+							Mao Mao: Heroes of Pure Heart
+						</a>
+					</div>
+				</nav>
+				<nav className="navigation">
+					<div className="navigation--header">Paint Supervisor / Background Painter</div>
+					<div className="navigation--item">
+						<a className={selectedLink("/arlo")} href="/#/arlo">
+							Arlo the Alligator Boy
 						</a>
 					</div>
 				</nav>
 				<nav className="navigation">
 					<div className="navigation--header">Background Paint</div>
-					<div className="navigation--item">
-						<a className={selectedLink("/arlo")} href="/#/arlo">
-							Arlo
-						</a>
-					</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/midnight")} href="/#/midnight">
 							Midnight Gospel
@@ -54,7 +57,7 @@ function Header() {
 					</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/niko")} href="/#/niko">
-							Niko
+							Niko and the Sword of Light
 						</a>
 					</div>
 					<div className="navigation--item">
@@ -64,12 +67,12 @@ function Header() {
 					</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/turbo")} href="/#/turbo">
-							Turbo
+							Turbo Fast
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className={selectedLink("/micro-machines")} href="/#/micro-machines">
-							Micro Machines
+						<a className={selectedLink("/hot-wheels")} href="/#/hot-wheels">
+							Team Hot Wheels
 						</a>
 					</div>
 				</nav>
