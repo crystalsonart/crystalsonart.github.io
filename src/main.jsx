@@ -3,17 +3,17 @@ import { StrictMode } from "react";
 import Home from "./components/Home";
 import LittleBig from "./components/LittleBig";
 import Niko from "./components/Niko";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/niko" element={<Niko />} />
-				<Route path="/little-big" element={<LittleBig />} />
+				<Route path="/#/niko" element={<Niko />} />
+				<Route path="/#/little-big" element={<LittleBig />} />
 			</Routes>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 

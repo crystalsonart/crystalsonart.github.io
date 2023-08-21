@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Crystal Yoori Son's Portfolio",
 	"main": "index.js",
+	"homepage": "https://crystalson.art/#",
 	"scripts": {
 		"build": "npx rimraf dist && vite build",
 		"build:watch": "npx rimraf dist && vite build -w",
