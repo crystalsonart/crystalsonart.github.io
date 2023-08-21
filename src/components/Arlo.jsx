@@ -1,6 +1,6 @@
 import Main from "./Main";
 
-function HomePage() {
+function Arlo() {
 	return (
 		<Main
 			onSelectItem={(value) => {
@@ -10,4 +10,4 @@ function HomePage() {
 	);
 }
 
-export default HomePage;
+export default Arlo;

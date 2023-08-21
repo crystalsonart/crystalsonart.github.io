@@ -1,5 +1,9 @@
 .header {
-	width: 50rem;
+	width: 40rem;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	height: 100%;
 	padding: 4rem 4rem;
 	background-color: $color-grey-light;
 

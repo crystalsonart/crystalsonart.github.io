@@ -25,25 +25,26 @@ function Header() {
 					<div>crystalson826@gmail.com</div>
 				</div>
 				<nav className="navigation">
-					<div className="navigation--header">Background Paint</div>
+					<div className="navigation--header">Art Director</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/pantheon")} href="/#/pantheon">
 							Pantheon
 						</a>
 					</div>
+				</nav>
+				<nav className="navigation">
+					<div className="navigation--header">Paint Supervisor</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/mao-mao")} href="/#/mao-mao">
 							Mao Mao
 						</a>
 					</div>
+				</nav>
+				<nav className="navigation">
+					<div className="navigation--header">Background Paint</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/arlo")} href="/#/arlo">
 							Arlo
-						</a>
-					</div>
-					<div className="navigation--item">
-						<a className={selectedLink("/niko")} href="/#/niko">
-							Niko
 						</a>
 					</div>
 					<div className="navigation--item">
@@ -52,13 +53,33 @@ function Header() {
 						</a>
 					</div>
 					<div className="navigation--item">
+						<a className={selectedLink("/niko")} href="/#/niko">
+							Niko
+						</a>
+					</div>
+					<div className="navigation--item">
 						<a className={selectedLink("/little-big")} href="/#/little-big">
 							Little Big Awesome
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className={selectedLink("/turbo")} href="/#/turbo">
+							Turbo
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className={selectedLink("/micro-machines")} href="/#/micro-machines">
+							Micro Machines
 						</a>
 					</div>
 				</nav>
 				<nav className="navigation">
 					<div className="navigation--header">Crystal</div>
+					<div className="navigation--item">
+						<a className={selectedLink("/personal-work")} href="/#/personal-work">
+							Personal Work
+						</a>
+					</div>
 					<div className="navigation--item">
 						<a className={selectedLink("/about-me")} href="/#/about-me">
 							About Me
