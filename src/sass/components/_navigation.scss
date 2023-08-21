@@ -28,4 +28,16 @@
 			color: $color-primary-dark;
 		}
 	}
+
+	&--link-selected {
+		&,
+		&:link,
+		&:visited {
+			color: $color-primary-dark;
+		}
+
+		&:hover {
+			color: $color-primary-light;
+		}
+	}
 }

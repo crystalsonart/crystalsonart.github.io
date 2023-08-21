@@ -1,4 +1,16 @@
+import { useLocation } from "react-router-dom";
+
 function Header() {
+	const location = useLocation();
+
+	function selectedLink(pathname) {
+		if (pathname === location.pathname) {
+			return "navigation--link navigation--link-selected";
+		}
+
+		return "navigation--link";
+	}
+
 	return (
 		<header className="header">
 			<section className="header--section">
@@ -15,41 +27,46 @@ function Header() {
 				<nav className="navigation">
 					<div className="navigation--header">Background Paint</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="/#/patheon">
+						<a className={selectedLink("/pantheon")} href="/#/pantheon">
 							Pantheon
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="/#/mao-mao">
+						<a className={selectedLink("/mao-mao")} href="/#/mao-mao">
 							Mao Mao
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="/#/niko">
+						<a className={selectedLink("/arlo")} href="/#/arlo">
+							Arlo
+						</a>
+					</div>
+					<div className="navigation--item">
+						<a className={selectedLink("/niko")} href="/#/niko">
 							Niko
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="/#/midnight">
+						<a className={selectedLink("/midnight")} href="/#/midnight">
 							Midnight Gospel
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="/#/little-big">
+						<a className={selectedLink("/little-big")} href="/#/little-big">
 							Little Big Awesome
 						</a>
 					</div>
 				</nav>
 				<nav className="navigation">
-					<div className="navigation--header">About Me</div>
+					<div className="navigation--header">Crystal</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="/#/about-me">
-							Contact Me
+						<a className={selectedLink("/about-me")} href="/#/about-me">
+							About Me
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="/#/past-work">
-							Past Work
+						<a className={selectedLink("/contact-me")} href="/#/contact-me">
+							Contact Me
 						</a>
 					</div>
 				</nav>
