@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
+import HomePage from "./components/HomePage";
 import LittleBig from "./components/LittleBig";
 import Niko from "./components/Niko";
 import Header from "./components/Header";
@@ -19,8 +20,10 @@ function App() {
 		<HashRouter>
 			<Routes>
 				<Route path="/" element={<Layout />}>
+					<Route path="/" element={<HomePage />} />
 					<Route path="/niko" element={<Niko />} />
 					<Route path="/little-big" element={<LittleBig />} />
+					<Route path="*" element={<HomePage />} />
 				</Route>
 			</Routes>
 		</HashRouter>
