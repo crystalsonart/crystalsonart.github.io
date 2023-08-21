@@ -10,8 +10,8 @@ function App() {
 		<HashRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/#/niko" element={<Niko />} />
-				<Route path="/#/little-big" element={<LittleBig />} />
+				<Route path="/niko" element={<Niko />} />
+				<Route path="/little-big" element={<LittleBig />} />
 			</Routes>
 		</HashRouter>
 	);
