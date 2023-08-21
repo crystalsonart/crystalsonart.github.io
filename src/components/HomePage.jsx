@@ -1,13 +1,7 @@
 import Main from "./Main";
 
 function HomePage() {
-	return (
-		<Main
-			onSelectItem={(value) => {
-				console.log(value);
-			}}
-		/>
-	);
+	return <Main />;
 }
 
 export default HomePage;

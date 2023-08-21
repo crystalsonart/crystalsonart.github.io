@@ -1,6 +1,6 @@
 import Main from "./Main";
 
-function App() {
+function Niko() {
 	return (
 		<Main
 			images={[
@@ -9,11 +9,8 @@ function App() {
 				{ name: "Niko 03", src: "./images/niko/niko-03.jpg" },
 				{ name: "Niko 04", src: "./images/niko/niko-04.jpg" },
 			]}
-			onSelectItem={(value) => {
-				console.log(value);
-			}}
 		/>
 	);
 }
 
-export default App;
+export default Niko;

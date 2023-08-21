@@ -1,13 +1,7 @@
 import Main from "./Main";
 
 function MaoMao() {
-	return (
-		<Main
-			onSelectItem={(value) => {
-				console.log(value);
-			}}
-		/>
-	);
+	return <Main />;
 }
 
 export default MaoMao;

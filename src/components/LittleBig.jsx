@@ -33,9 +33,6 @@ function LittleBig() {
 					src: "./images/little-big-awesome/little-big-awesome-07.png",
 				},
 			]}
-			onSelectItem={(value) => {
-				console.log(value);
-			}}
 		/>
 	);
 }
