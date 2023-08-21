@@ -1,16 +1,12 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from "./Header";
+import Main from "./Main";
 
-function App() {
+function LittleBig() {
 	return (
 		<>
 			<Header />
 			<Main
 				images={[
-					{ name: "Niko 01", src: "./images/niko/niko-01.jpg" },
-					{ name: "Niko 02", src: "./images/niko/niko-02.jpg" },
-					{ name: "Niko 03", src: "./images/niko/niko-03.jpg" },
-					{ name: "Niko 04", src: "./images/niko/niko-04.jpg" },
 					{
 						name: "Little Big Awesome 01",
 						src: "./images/little-big-awesome/little-big-awesome-01.jpg",
@@ -48,4 +44,4 @@ function App() {
 	);
 }
 
-export default App;
+export default LittleBig;

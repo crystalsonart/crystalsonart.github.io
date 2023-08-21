@@ -15,27 +15,27 @@ function Header() {
 				<nav className="navigation">
 					<div className="navigation--header">Background Paint</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="#">
+						<a className="navigation--link" href="/patheon">
 							Pantheon
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="#">
+						<a className="navigation--link" href="/mao-mao">
 							Mao Mao
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="#">
+						<a className="navigation--link" href="/niko">
 							Niko
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="#">
+						<a className="navigation--link" href="/midnight">
 							Midnight Gospel
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="#">
+						<a className="navigation--link" href="/little-big">
 							Little Big Awesome
 						</a>
 					</div>
@@ -43,12 +43,12 @@ function Header() {
 				<nav className="navigation">
 					<div className="navigation--header">About Me</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="#">
+						<a className="navigation--link" href="/about-me">
 							Contact Me
 						</a>
 					</div>
 					<div className="navigation--item">
-						<a className="navigation--link" href="#">
+						<a className="navigation--link" href="/past-work">
 							Past Work
 						</a>
 					</div>
