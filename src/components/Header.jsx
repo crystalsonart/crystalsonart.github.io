@@ -88,11 +88,6 @@ function Header() {
 							About Me
 						</a>
 					</div>
-					<div className="navigation--item">
-						<a className={selectedLink("/contact-me")} href="/#/contact-me">
-							Contact Me
-						</a>
-					</div>
 				</nav>
 			</section>
 		</header>

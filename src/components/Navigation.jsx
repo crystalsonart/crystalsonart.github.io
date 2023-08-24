@@ -13,7 +13,6 @@ import HotWheels from "./HotWheels";
 
 import PersonalWork from "./PersonalWork";
 import AboutMe from "./AboutMe";
-import ContactMe from "./ContactMe";
 
 import { HashRouter, Outlet, Routes, Route } from "react-router-dom";
 
@@ -42,7 +41,6 @@ function Navigation() {
 					<Route path="/hot-wheels" element={<HotWheels />} />
 					<Route path="/personal-work" element={<PersonalWork />} />
 					<Route path="/about-me" element={<AboutMe />} />
-					<Route path="/contact-me" element={<ContactMe />} />
 					<Route path="*" element={<HomePage />} />
 				</Route>
 			</Routes>
