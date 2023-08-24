@@ -1,0 +1,64 @@
+.stories {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5rem;
+	margin-left: 40rem;
+	width: calc(100% - 40rem);
+	padding: 5rem 5rem;
+	background-color: $color-white;
+}
+
+.story {
+	display: flex;
+	justify-content: center;
+	width: 50rem;
+	margin: 0 auto;
+	box-shadow: 0 3rem 6rem rgba($color-black, .1);
+	background-color: rgba($color-white, .6);
+	border-radius: 1rem;
+	padding: 5rem 10rem;
+	font-size: 1rem;
+
+	&__shape {
+		width: 300px;
+		height: 150px;
+		position: relative;
+		object-fit: none;
+	}
+
+	&__image {
+		height: 100%;
+		backface-visibility: hidden;
+		transition: all .5s ease;
+		width: 100%;
+		transform: scale(1.25);
+		filter: blur(3px) brightness(80%);
+	}
+
+	&__caption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 20%);
+		color: $color-white;
+		text-transform: uppercase;
+		font-size: 1.7rem;
+		text-align: center;
+		opacity: 0;
+		transition: all .5s ease;
+		backface-visibility: hidden;
+		opacity: 1;
+		transform: translate(-45%, -45%);
+	}
+
+	&:hover &__image {
+		transform: scale(1.5);
+		filter: blur(3px) brightness(80%);
+	}
+
+	&:hover &__caption {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+}
