@@ -79,7 +79,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/pantheon")}
-							href={"?password=" + password + "#/pantheon"}
+							// href={"?password=" + password + "#/pantheon"}
+							href={"/#/pantheon"}
 						>
 							Pantheon
 						</a>
@@ -90,7 +91,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/mao-mao")}
-							href={"?password=" + password + "#/mao-mao"}
+							// href={"?password=" + password + "#/mao-mao"}
+							href={"/#/mao-mao"}
 						>
 							Mao Mao: Heroes of Pure Heart
 						</a>
@@ -120,7 +122,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/star-wars")}
-							href={"?password=" + password + "#/star-wars"}
+							// href={"?password=" + password + "#/star-wars"}
+							href={"/#/star-wars"}
 						>
 							Star Wars: Galaxy of Adventures
 						</a>
@@ -128,7 +131,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/niko")}
-							href={"?password=" + password + "#/niko"}
+							// href={"?password=" + password + "#/niko"}
+							href={"/#/niko"}
 						>
 							Niko and the Sword of Light
 						</a>
@@ -136,7 +140,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/little-big")}
-							href={"?password=" + password + "#/little-big"}
+							// href={"?password=" + password + "#/little-big"}
+							href={"/#/little-big"}
 						>
 							Little Big Awesome
 						</a>
@@ -144,7 +149,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/turbo")}
-							href={"?password=" + password + "#/turbo"}
+							// href={"?password=" + password + "#/turbo"}
+							href={"/#/turbo"}
 						>
 							Turbo Fast
 						</a>
@@ -152,7 +158,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/hot-wheels")}
-							href={"?password=" + password + "#/hot-wheels"}
+							// href={"?password=" + password + "#/hot-wheels"}
+							href={"/#/hot-wheels"}
 						>
 							Team Hot Wheels
 						</a>
@@ -171,7 +178,8 @@ function Header() {
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/contact-me")}
-							href={"?password=" + password + "#/contact-me"}
+							// href={"?password=" + password + "#/contact-me"}
+							href={"/#/contact-me"}
 						>
 							Let's Connect
 						</a>

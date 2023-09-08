@@ -40,7 +40,8 @@ function HomePage() {
 				stories.map((story) => {
 					return (
 						<div className="story">
-							<a href={"?password=" + password + story.url}>
+							{/* <a href={"?password=" + password + story.url}> */}
+							<a href={"/" + story.url}>
 								<figure class="story__shape">
 									<img src={story.img} alt={story.name} class="story__image" />
 									<figcaption class="story__caption">{story.name}</figcaption>
