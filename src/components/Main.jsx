@@ -12,7 +12,6 @@ function Main({ images }) {
 									key={image.name}
 									src={image.src}
 								/>
-								<div>{image.name}</div>
 							</>
 						);
 					})
