@@ -6,3 +6,10 @@
 	padding: 5rem 5rem;
 	background-color: $color-white;
 }
+
+@media screen and (max-width: 1000px) {
+	.main {
+		margin-left: 0;
+		width: 100%;
+	}
+}

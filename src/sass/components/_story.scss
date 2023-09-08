@@ -9,6 +9,13 @@
 	background-color: $color-white;
 }
 
+@media screen and (max-width: 1000px) {
+	.stories {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
 .story {
 	display: flex;
 	justify-content: center;

@@ -7,7 +7,7 @@
 	}
 
 	&--item {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 	}
 
 	&--link {
@@ -38,6 +38,16 @@
 
 		&:hover {
 			color: $color-primary-light;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.navigation {
+		display: block;
+
+		&--item {
+			font-size: 1.5rem;
 		}
 	}
 }

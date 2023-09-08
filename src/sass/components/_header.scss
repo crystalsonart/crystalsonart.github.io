@@ -17,9 +17,26 @@
 	}
 }
 
+@media screen and (max-width: 1000px) {
+	.header {
+		display: block;
+		width: 100%;
+		top: 0;
+		bottom: auto;
+		height: auto;
+		position: static;
+		padding: 1rem 1rem;
+
+		&--section {
+			position: static;
+		}
+	}
+}
+
 .crystal {
 	&__name {
 		display: flex;
+		justify-content: space-between;
 
 		&--icon {
 			width: 5rem;
@@ -28,7 +45,7 @@
 
 		&--name {
 			margin: .5rem 1rem;
-			font-size: 2.2rem;
+			font-size: 2.5rem;
 			font-weight: 300;
 			text-transform: uppercase;
 			color: $color-black;
@@ -37,6 +54,91 @@
 
 	&__description {
 		margin: 1rem;
-		font-size: 1.25rem;
+		font-size: 1.5rem;
+	}
+
+	&__menu {
+		display: none;
+		padding: 1rem;
+
+		&--checkbox {
+			display: none;
+		}
+
+		&--button {
+			background-color: $color-white;
+			height: 7rem;
+			width: 7rem;
+			position: fixed;
+			top: 1.5rem;
+			right: 1.5rem;
+			border-radius: 50%;
+			z-index: 2000;
+			box-shadow: 0 1rem 3rem rgba($color-black, .1);
+			text-align: center;
+			cursor: pointer;
+		}
+
+		&--icon {
+			position: relative;
+			margin-top: 3.5rem;
+
+			&,
+			&::before,
+			&::after {
+				width: 3rem;
+				height: 2px;
+				background-color: $color-grey-dark;
+				display: inline-block;
+				transition: all .2s;
+			}
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+			}
+
+			&::before {
+				top: .8rem;
+				transition: all .2s;
+			}
+
+			&::after {
+				bottom: .8rem;
+				transition: all .2s;
+			}
+		}
+
+		&--button:hover &--icon::before {
+			top: 1rem;
+		}
+
+		&--button:hover  &--icon::after {
+			bottom: 1rem;
+		}
+
+		&--checkbox:checked + &--button &--icon {
+			background-color: transparent;
+		}
+
+		&--checkbox:checked + &--button &--icon::before {
+			top: 0;
+			transform: rotate(45deg);
+		}
+
+		&--checkbox:checked + &--button &--icon::after {
+			bottom: 0;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.crystal {
+		&__menu {
+			display: block;
+		}
 	}
 }

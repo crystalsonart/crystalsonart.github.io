@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { useRef, useEffect, useState } from "react";
 
 function Header() {
 	const location = useLocation();
@@ -6,6 +7,27 @@ function Header() {
 	const searchParams = new URLSearchParams(window.location.search);
 
 	let password = searchParams.get("password");
+
+	const navigationCheckbox = useRef();
+	const navigationElement = useRef();
+
+	const [isMobile, setIsMobile] = useState(false);
+
+	//choose the screen size
+	const handleResize = () => {
+		if (window.innerWidth < 1000) {
+			setIsMobile(true);
+		} else {
+			setIsMobile(false);
+
+			navigationElement.current.style.display = "block";
+		}
+	};
+
+	// create an event listener
+	useEffect(() => {
+		window.addEventListener("resize", handleResize);
+	});
 
 	function selectedLink(pathname) {
 		if (pathname === location.pathname) {
@@ -15,6 +37,16 @@ function Header() {
 		return "navigation--link";
 	}
 
+	function onNavigationClick() {
+		if (isMobile) {
+			if (navigationCheckbox.current.checked) {
+				navigationElement.current.style.display = "block";
+			} else {
+				navigationElement.current.style.display = "none";
+			}
+		}
+	}
+
 	return (
 		<header className="header">
 			<section className="header--section">
@@ -22,12 +54,25 @@ function Header() {
 					<h1 className="crystal__name">
 						{/* <img className="crystal__name--icon" src="./images/crystal_icon.png" /> */}
 						<div className="crystal__name--name">Crystal Yoori Son</div>
+						{/* <div className="crystal__menu">
+							<input
+								ref={navigationCheckbox}
+								type="checkbox"
+								class="crystal__menu--checkbox"
+								id="navi-toggle"
+								onChange={onNavigationClick}
+							/>
+
+							<label for="navi-toggle" class="crystal__menu--button">
+								<span class="crystal__menu--icon"></span>
+							</label>
+						</div> */}
 					</h1>
 				</a>
 				<div className="crystal__description">
 					<div>crystalson826@gmail.com</div>
 				</div>
-				<nav className="navigation">
+				<nav className="navigation" ref={navigationElement}>
 					<div className="navigation--header">
 						Art Direction / BG Paint & Color Supervisor
 					</div>
