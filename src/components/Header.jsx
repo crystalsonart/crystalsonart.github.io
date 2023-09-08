@@ -20,7 +20,7 @@ function Header() {
 			<section className="header--section">
 				<a className="header--link" href={"/?password=" + password}>
 					<h1 className="crystal__name">
-						<img className="crystal__name--icon" src="./images/crystal_icon.png" />
+						{/* <img className="crystal__name--icon" src="./images/crystal_icon.png" /> */}
 						<div className="crystal__name--name">Crystal Yoori Son</div>
 					</h1>
 				</a>
@@ -75,7 +75,7 @@ function Header() {
 					</div> */}
 					<div className="navigation--item">
 						<a
-							className={selectedLink("/niko")}
+							className={selectedLink("/star-wars")}
 							href={"?password=" + password + "#/star-wars"}
 						>
 							Star Wars: Galaxy of Adventures
@@ -126,10 +126,10 @@ function Header() {
 					</div> */}
 					<div className="navigation--item">
 						<a
-							className={selectedLink("/about-me")}
-							href={"?password=" + password + "#/about-me"}
+							className={selectedLink("/contact-me")}
+							href={"?password=" + password + "#/contact-me"}
 						>
-							About Me
+							Let's Connect
 						</a>
 					</div>
 				</nav>

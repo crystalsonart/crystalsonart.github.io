@@ -10,6 +10,11 @@ function HomePage() {
 			img: "./images/mao-mao/mao-mao-01.jpg",
 			url: "#/mao-mao",
 		},
+		{
+			name: "Star Wars: Galaxy of Adventures",
+			img: "./images/star-wars/star-wars-04.jpg",
+			url: "#/star-wars",
+		},
 		{ name: "Niko and the Sword of Light", img: "./images/niko/niko-01.jpg", url: "#/niko" },
 		{
 			name: "Little Big Awesome",

@@ -2,11 +2,11 @@ function AboutMe() {
 	return (
 		<main className="about-me">
 			<section className="about-me__section">
-				<img
+				{/* <img
 					className="about-me__image"
 					src="./images/crystal_icon.png"
 					alt="Crystal Yoori Son"
-				/>
+				/> */}
 
 				<section className="about-me__paragraphs">
 					<p className="about-me__paragraph">
