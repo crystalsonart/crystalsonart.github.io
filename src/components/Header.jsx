@@ -25,7 +25,6 @@ function Header() {
 					</h1>
 				</a>
 				<div className="crystal__description">
-					<div>Background Paint | Concept Design</div>
 					<div>crystalson826@gmail.com</div>
 				</div>
 				<nav className="navigation">
@@ -115,7 +114,7 @@ function Header() {
 					</div>
 				</nav>
 				<nav className="navigation">
-					<div className="navigation--header">Crystal</div>
+					{/* <div className="navigation--header">Crystal</div> */}
 					{/* <div className="navigation--item">
 						<a
 							className={selectedLink("/personal-work")}
