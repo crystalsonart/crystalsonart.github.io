@@ -106,14 +106,14 @@ function Header() {
 				</nav>
 				<nav className="navigation">
 					<div className="navigation--header">Crystal</div>
-					<div className="navigation--item">
+					{/* <div className="navigation--item">
 						<a
 							className={selectedLink("/personal-work")}
 							href={"?password=" + password + "#/personal-work"}
 						>
 							Personal Work
 						</a>
-					</div>
+					</div> */}
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/about-me")}

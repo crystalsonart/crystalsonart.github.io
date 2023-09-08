@@ -16,8 +16,8 @@ function AboutMe() {
 					<p class="about-me__paragraph">
 						I've worked in a variety of roles such as an <strong>Art Director</strong>,{" "}
 						<strong>Paint Supervisor</strong>, & <strong>Background Paint</strong>. I
-						have experience working with a different styles that range from
-						detail-oriented shows like Pantheon & Niko to abstract designs like Midnight
+						have experience working with a different styles that range from dramatic &
+						realistic shows like Pantheon & Niko to abstract & fun shows like Midnight
 						Gospel & Little Big Awesome.
 					</p>
 					<p className="about-me__paragraph">

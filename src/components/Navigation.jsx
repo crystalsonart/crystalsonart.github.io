@@ -39,7 +39,7 @@ function Navigation() {
 					<Route path="/little-big" element={<LittleBig />} />
 					<Route path="/turbo" element={<Turbo />} />
 					<Route path="/hot-wheels" element={<HotWheels />} />
-					<Route path="/personal-work" element={<PersonalWork />} />
+					{/* <Route path="/personal-work" element={<PersonalWork />} /> */}
 					<Route path="/about-me" element={<AboutMe />} />
 					<Route path="*" element={<HomePage />} />
 				</Route>
