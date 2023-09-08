@@ -2,10 +2,10 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 5rem;
+	gap: 10rem;
 	margin-left: 40rem;
 	width: calc(100% - 40rem);
-	padding: 5rem 5rem;
+	padding: 12rem 5rem;
 	background-color: $color-white;
 }
 
@@ -13,7 +13,7 @@
 	display: flex;
 	justify-content: center;
 	width: 50rem;
-	margin: 0 auto;
+	margin: 0;
 	box-shadow: 0 3rem 6rem rgba($color-black, .1);
 	background-color: rgba($color-white, .6);
 	border-radius: 1rem;
@@ -40,18 +40,18 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, 20%);
 		color: $color-white;
 		text-transform: uppercase;
 		font-size: 1.9rem;
 		font-weight: 700;
+		letter-spacing: 2.5px;
 		text-align: center;
 		width: 100%;
 		opacity: 0;
 		transition: all .5s ease;
 		backface-visibility: hidden;
 		opacity: 1;
-		transform: translate(-45%, -45%);
+		transform: translate(-50%, -50%);
 	}
 
 	&:hover &__image {
@@ -61,6 +61,6 @@
 
 	&:hover &__caption {
 		opacity: 1;
-		transform: translate(-50%, -50%);
+		transform: scale(1.1) translate(-45%, -45%);
 	}
 }

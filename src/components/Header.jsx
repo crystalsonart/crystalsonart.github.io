@@ -29,7 +29,9 @@ function Header() {
 					<div>crystalson826@gmail.com</div>
 				</div>
 				<nav className="navigation">
-					<div className="navigation--header">Art Director / Paint Supervisor</div>
+					<div className="navigation--header">
+						Art Direction / BG Paint & Color Supervisor
+					</div>
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/pantheon")}
@@ -40,7 +42,7 @@ function Header() {
 					</div>
 				</nav>
 				<nav className="navigation">
-					<div className="navigation--header">Paint Supervisor</div>
+					<div className="navigation--header">BG Paint & Color Supervisor</div>
 					<div className="navigation--item">
 						<a
 							className={selectedLink("/mao-mao")}
@@ -50,7 +52,7 @@ function Header() {
 						</a>
 					</div>
 				</nav>
-				<nav className="navigation">
+				{/* <nav className="navigation">
 					<div className="navigation--header">Paint Supervisor / Background Painter</div>
 					<div className="navigation--item">
 						<a
@@ -60,15 +62,23 @@ function Header() {
 							Arlo the Alligator Boy
 						</a>
 					</div>
-				</nav>
+				</nav> */}
 				<nav className="navigation">
 					<div className="navigation--header">Background Paint</div>
-					<div className="navigation--item">
+					{/* <div className="navigation--item">
 						<a
 							className={selectedLink("/midnight")}
 							href={"?password=" + password + "#/midnight"}
 						>
 							Midnight Gospel
+						</a>
+					</div> */}
+					<div className="navigation--item">
+						<a
+							className={selectedLink("/niko")}
+							href={"?password=" + password + "#/star-wars"}
+						>
+							Star Wars: Galaxy of Adventures
 						</a>
 					</div>
 					<div className="navigation--item">

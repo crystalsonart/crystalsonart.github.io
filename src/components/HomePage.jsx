@@ -4,7 +4,12 @@ function HomePage() {
 	let password = searchParams.get("password");
 
 	const stories = [
-		{ name: "Pantheon", img: "./images/pantheon/pantheon-06.jpg", url: "#/niko" },
+		{ name: "Pantheon", img: "./images/pantheon/pantheon-06.jpg", url: "#/pantheon" },
+		{
+			name: "Mao Mao: Heroes of Pure Heart",
+			img: "./images/mao-mao/mao-mao-01.jpg",
+			url: "#/mao-mao",
+		},
 		{ name: "Niko and the Sword of Light", img: "./images/niko/niko-01.jpg", url: "#/niko" },
 		{
 			name: "Little Big Awesome",
