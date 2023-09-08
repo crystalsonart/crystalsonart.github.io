@@ -5,12 +5,15 @@ function Main({ images }) {
 				{images ? (
 					images.map((image, index) => {
 						return (
-							<img
-								alt={image.name}
-								className="image"
-								key={image.name}
-								src={image.src}
-							/>
+							<>
+								<img
+									alt={image.name}
+									className="image"
+									key={image.name}
+									src={image.src}
+								/>
+								<div>{image.name}</div>
+							</>
 						);
 					})
 				) : (
