@@ -1,0 +1,35 @@
+.hidden-page {
+	height: 100vh;
+
+	// opacity: 0;
+	// width: 0;
+
+	&__section {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&_title {
+		font-size: 5rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: center;
+		color: $color-grey-dark;
+	}
+
+	&__password {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	&__password-text {
+		padding: .7rem;
+		font-size: 1.75rem;
+
+		&::-webkit-input-placeholder {
+			color: $color-grey-dark-2;
+		}
+	}
+}
