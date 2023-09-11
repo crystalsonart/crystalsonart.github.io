@@ -1,24 +1,12 @@
 function Main({ images }) {
 	return (
-		<main className="main">
-			<section className="images">
-				{images ? (
-					images.map((image, index) => {
-						return (
-							<>
-								<img
-									alt={image.name}
-									className="image"
-									key={image.name}
-									src={image.src}
-								/>
-							</>
-						);
-					})
-				) : (
-					<div>There are no images</div>
-				)}
-			</section>
+		<main className="p-32 flex flex-col align-middle">
+			{images &&
+				images.map((image) => {
+					return (
+						<img alt={image.name} className="pb-12" key={image.name} src={image.src} />
+					);
+				})}
 		</main>
 	);
 }

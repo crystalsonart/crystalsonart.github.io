@@ -30,11 +30,13 @@ function Header() {
 	});
 
 	function selectedLink(pathname) {
+		var className = "hover:text-sky-300";
+
 		if (pathname === location.pathname) {
-			return "navigation--link navigation--link-selected";
+			className += " text-sky-500";
 		}
 
-		return "navigation--link";
+		return className;
 	}
 
 	function onNavigationClick() {
@@ -47,145 +49,65 @@ function Header() {
 		}
 	}
 
-	return (
-		<header className="header">
-			<section className="header--section">
-				<a className="header--link" href={"/?password=" + password}>
-					<h1 className="crystal__name">
-						{/* <img className="crystal__name--icon" src="./images/crystal_icon.png" /> */}
-						<div className="crystal__name--name">Crystal Yoori Son</div>
-						{/* <div className="crystal__menu">
-							<input
-								ref={navigationCheckbox}
-								type="checkbox"
-								class="crystal__menu--checkbox"
-								id="navi-toggle"
-								onChange={onNavigationClick}
-							/>
+	const navigation = [
+		{
+			header: "Art Direction / BG Paint & Color Supervisor",
+			shows: [{ name: "Pantheon", url: "/pantheon" }],
+		},
+		{
+			header: "BG Paint & Color Supervisor",
+			shows: [
+				{ name: "Mao Mao: Heroes of Pure Heart", url: "/mao-mao" },
+				// { name: "Arlo the Alligator Boy", url: "/arlo" },
+			],
+		},
+		{
+			header: "Background Paint",
+			shows: [
+				// { name: "Midnight Gospel", url: "/midnight" },
+				{ name: "Star Wars: Galaxy of Adventures", url: "/star-wars" },
+				{ name: "Nike and the Sword of Light", url: "/niko" },
+				{ name: "Little Big Awesome", url: "/little-big" },
+				{ name: "Turbo Fast", url: "/turbo" },
+				{ name: "Team Hot Wheels", url: "/hot-wheels" },
+			],
+		},
+		{
+			shows: [
+				// { name: "Personal Work", url: "/personal-work" },
+				// { name: "About Me", url: "/about-me" },
+				{ name: "Let's Connect", url: "/contact-me" },
+			],
+		},
+	];
 
-							<label for="navi-toggle" class="crystal__menu--button">
-								<span class="crystal__menu--icon"></span>
-							</label>
-						</div> */}
-					</h1>
+	return (
+		<header className="p-12 bg-slate-50">
+			<a className="text-5xl font-extralight uppercase tracking-wide text-black" href={"/"}>
+				<h1>Crystal Yoori Son</h1>
+			</a>
+			<div className="py-3 pl-2 text-xl">
+				<a className="hover:text-sky-400" href="mailto:crystalson826@gmail.com">
+					crystalson826@gmail.com
 				</a>
-				<div className="crystal__description">
-					<div>crystalson826@gmail.com</div>
-				</div>
-				<nav className="navigation" ref={navigationElement}>
-					<div className="navigation--header">
-						Art Direction / BG Paint & Color Supervisor
-					</div>
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/pantheon")}
-							// href={"?password=" + password + "#/pantheon"}
-							href={"/#/pantheon"}
-						>
-							Pantheon
-						</a>
-					</div>
-				</nav>
-				<nav className="navigation">
-					<div className="navigation--header">BG Paint & Color Supervisor</div>
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/mao-mao")}
-							// href={"?password=" + password + "#/mao-mao"}
-							href={"/#/mao-mao"}
-						>
-							Mao Mao: Heroes of Pure Heart
-						</a>
-					</div>
-				</nav>
-				{/* <nav className="navigation">
-					<div className="navigation--header">Paint Supervisor / Background Painter</div>
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/arlo")}
-							href={"?password=" + password + "#/arlo"}
-						>
-							Arlo the Alligator Boy
-						</a>
-					</div>
-				</nav> */}
-				<nav className="navigation">
-					<div className="navigation--header">Background Paint</div>
-					{/* <div className="navigation--item">
-						<a
-							className={selectedLink("/midnight")}
-							href={"?password=" + password + "#/midnight"}
-						>
-							Midnight Gospel
-						</a>
-					</div> */}
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/star-wars")}
-							// href={"?password=" + password + "#/star-wars"}
-							href={"/#/star-wars"}
-						>
-							Star Wars: Galaxy of Adventures
-						</a>
-					</div>
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/niko")}
-							// href={"?password=" + password + "#/niko"}
-							href={"/#/niko"}
-						>
-							Niko and the Sword of Light
-						</a>
-					</div>
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/little-big")}
-							// href={"?password=" + password + "#/little-big"}
-							href={"/#/little-big"}
-						>
-							Little Big Awesome
-						</a>
-					</div>
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/turbo")}
-							// href={"?password=" + password + "#/turbo"}
-							href={"/#/turbo"}
-						>
-							Turbo Fast
-						</a>
-					</div>
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/hot-wheels")}
-							// href={"?password=" + password + "#/hot-wheels"}
-							href={"/#/hot-wheels"}
-						>
-							Team Hot Wheels
-						</a>
-					</div>
-				</nav>
-				<nav className="navigation">
-					{/* <div className="navigation--header">Crystal</div> */}
-					{/* <div className="navigation--item">
-						<a
-							className={selectedLink("/personal-work")}
-							href={"?password=" + password + "#/personal-work"}
-						>
-							Personal Work
-						</a>
-					</div> */}
-					<div className="navigation--item">
-						<a
-							className={selectedLink("/contact-me")}
-							// href={"?password=" + password + "#/contact-me"}
-							href={"/#/contact-me"}
-						>
-							Let's Connect
-						</a>
-					</div>
-				</nav>
-			</section>
+			</div>
+			{navigation.map((nav) => {
+				return (
+					<nav className="pt-6 pl-2" ref={navigationElement}>
+						{nav.header && <div className="pb-3 text-lg font-bold">{nav.header}</div>}
+
+						{nav.shows.map((show) => {
+							return (
+								<div className="py-1 text-2xl">
+									<a className={selectedLink(show.url)} href={"#" + show.url}>
+										{show.name}
+									</a>
+								</div>
+							);
+						})}
+					</nav>
+				);
+			})}
 		</header>
 	);
 }

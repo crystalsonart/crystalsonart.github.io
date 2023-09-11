@@ -20,10 +20,16 @@ import { HashRouter, Outlet, Routes, Route } from "react-router-dom";
 
 function Layout() {
 	return (
-		<>
-			<Header />
-			<Outlet />
-		</>
+		<section className="flex flex-col h-screen">
+			<section className="flex flex-1 overflow-hidden">
+				<section className="flex ">
+					<Header />
+				</section>
+				<section className="flex flex-1 overflow-y-auto">
+					<Outlet />
+				</section>
+			</section>
+		</section>
 	);
 }
 

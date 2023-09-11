@@ -1,8 +1,4 @@
 function HomePage() {
-	const searchParams = new URLSearchParams(window.location.search);
-
-	let password = searchParams.get("password");
-
 	const stories = [
 		{ name: "Pantheon", img: "./images/pantheon/pantheon-06.jpg", url: "#/pantheon" },
 		{
@@ -34,25 +30,45 @@ function HomePage() {
 		// },
 	];
 
+	const transitions = "transition-all duration-500 ease-in-out";
+
 	return (
-		<main className="stories">
-			{stories ? (
-				stories.map((story) => {
-					return (
-						<div className="story">
-							{/* <a href={"?password=" + password + story.url}> */}
-							<a href={"/" + story.url}>
-								<figure class="story__shape">
-									<img src={story.img} alt={story.name} class="story__image" />
-									<figcaption class="story__caption">{story.name}</figcaption>
-								</figure>
-							</a>
-						</div>
-					);
-				})
-			) : (
-				<div>There are no images</div>
-			)}
+		<main className="p-12">
+			<section className="flex flex-wrap justify-around">
+				{stories ? (
+					stories.map((story) => {
+						return (
+							<div className="p-10">
+								<a href={"/" + story.url}>
+									<figure className="relative group w-[500px] h-[250px]">
+										<img
+											src={story.img}
+											alt={story.name}
+											className={
+												"w-full h-full " +
+												"blur-sm group-hover:blur-none group-hover:scale-110 " +
+												transitions
+											}
+										/>
+										<figcaption
+											className={
+												"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 " +
+												"font-bold text-3xl text-center text-white tracking-widest uppercase " +
+												"group-hover:scale-125 " +
+												transitions
+											}
+										>
+											{story.name}
+										</figcaption>
+									</figure>
+								</a>
+							</div>
+						);
+					})
+				) : (
+					<div>There are no images</div>
+				)}
+			</section>
 		</main>
 	);
 }

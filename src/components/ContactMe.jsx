@@ -1,15 +1,32 @@
 function ContactMe() {
+	const contacts = [
+		{
+			name: "Email Address",
+			value: "crystalson826@gmail.com",
+			url: "mailto:crystalson826@gmail.com",
+		},
+		{
+			name: "LinkedIn",
+			value: "Crystal Yoori Son",
+			url: "https://www.linkedin.com/in/crystal-yoori-son-b071ab40",
+		},
+	];
+
 	return (
-		<main className="contact-me">
-			<div>
-				Email Address: <a href="mailto:crystalson826@gmail.com">crystalson826@gmail.com</a>
-			</div>
-			<div>
-				LinkedIn:{" "}
-				<a href="https://www.linkedin.com/in/crystal-yoori-son-b071ab40">
-					Crystal Yoori Son
-				</a>
-			</div>
+		<main className="p-16">
+			{contacts.map((contact) => {
+				return (
+					<div className="text-3xl">
+						<span>{contact.name + ": "}</span>
+						<a
+							className="underline text-blue-500 hover:text-blue-300"
+							href={contact.url}
+						>
+							{contact.value}
+						</a>
+					</div>
+				);
+			})}
 		</main>
 	);
 }
