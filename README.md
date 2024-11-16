@@ -1,3 +1,3 @@
 # Crystal Yoori Son's Portfolio
 
-Published: https://crystalson.art
+Published: crystalsonart.github.io
